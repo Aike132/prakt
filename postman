@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "ba22bc8b-fa31-428b-85e5-c5079d9f0503",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27961179"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "create account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/account?name=po&secret=1111",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"account"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "po"
+								},
+								{
+									"key": "secret",
+									"value": "1111"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "session",
+			"item": [
+				{
+					"name": "create token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/session?name=admin&secret=aaaaa",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "admin"
+								},
+								{
+									"key": "secret",
+									"value": "aaaaa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete token",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/session?token=l 9 m 1 a u 3 z o 0",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "l 9 m 1 a u 3 z o 0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "note",
+			"item": [
+				{
+					"name": "create note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/note?token=e e x p 1 o r 1 g g&title=jhhjhbjhjhsdrgfd&content=notenotenotenotemkmklmkmldggsdg",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "e e x p 1 o r 1 g g"
+								},
+								{
+									"key": "title",
+									"value": "jhhjhbjhjhsdrgfd"
+								},
+								{
+									"key": "content",
+									"value": "notenotenotenotemkmklmkmldggsdg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/note?token=l 9 m 1 a u 3 z o 0",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "l 9 m 1 a u 3 z o 0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get note",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/note?id=1&token=l 9 m 1 a u 3 z o 0",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "token",
+									"value": "l 9 m 1 a u 3 z o 0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/note?id=1&token=l 9 m 1 a u 3 z o 0&title=mynote&content=notenotenotenotenotenotenote",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "token",
+									"value": "l 9 m 1 a u 3 z o 0"
+								},
+								{
+									"key": "title",
+									"value": "mynote"
+								},
+								{
+									"key": "content",
+									"value": "notenotenotenotenotenotenote"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://kpooo.pythonanywhere.com/note?id=1&token=l 9 m 1 a u 3 z o 0",
+							"protocol": "http",
+							"host": [
+								"kpooo",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "token",
+									"value": "l 9 m 1 a u 3 z o 0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
